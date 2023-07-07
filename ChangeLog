@@ -1,0 +1,130 @@
+2012-01-13  Michael Meskes  <meskes@debian.org>
+
+ * Fixed case sensitivity when checking for status file.
+ * release 1.6
+
+2011-03-09  Luca Capello  <luca@pca.it>
+
+ * main.c: use spaces to align -h output
+
+2010-03-28  Michael Meskes  <meskes@debian.org>
+
+ * Print error message if no information can be retrieved e.g. because acpi is
+   not activated.
+ * Read power_now and use it to replace current_now if the battery is reporting
+   energy values.
+ * released 1.5
+
+2009-06-04  Michael Meskes  <meskes@debian.org>
+
+ * fixed floating point exception when voltage_now is 0
+
+2009-03-25  Michael Meskes  <meskes@debian.org>
+
+ * released 1.4
+
+2009-03-23  Michael Meskes  <meskes@debian.org>
+
+ * fixed state information for thermal zones
+ * added output of all trip points
+ * straightlined old crufty user interface
+
+2009-03-19  Michael Meskes  <meskes@debian.org>
+
+ * fixed battery output to cope with systems giving energy values but no
+   voltage value
+
+2009-02-11  Michael Meskes  <meskes@debian.org>
+
+ * charge and energy values are not equivalent, correctly convert them
+ * released 1.3
+
+2008-09-17  Michael Meskes  <meskes@debian.org>
+
+ * released 1.2
+
+2008-09-11  Michael Meskes  <meskes@debian.org>
+
+ * made capacity information dependant on option
+ * also show last full capacity
+
+2008-08-22  Michael Meskes  <meskes@debian.org>
+
+ * fixed wording in manpage with regard to default path for new interface
+ * fixed buffer underrun in parse_field()
+ * do not use unsigned int if values can be negative
+ * fixed calculation of (dis)charging time (seconds/minutes mismatch)
+ * display design capacity
+
+2008-06-17  Michael Meskes  <meskes@debian.org>
+
+ * released 1.1
+ * just another possible type entry
+ * some more code cleanup
+ * removed support for old /proc file structure, only the last version of
+   the /proc file structure is supported
+
+2008-06-13  Michael Meskes  <meskes@debian.org>
+
+ * release 1.0
+ * added output for cooling devices
+
+2008-06-06  Michael Meskes  <meskes@debian.org>
+
+ * added new /sys interface
+ * forked/took over as upstream because I wasn't able to contact Grahame
+
+2005-04-14  Grahame Bowland  <grahame@angrygoats.net>
+
+ * release 0.09
+ * fixes Debian bug ids: #169351, #226306
+ * better handling of "unknown" "charging rate" and "present state" fields
+ * reformatted from 4 space to tab indents
+ * use VERSION from config.h rather than hard-coding it twice.
+
+2005-04-12  Grahame Bowland  <grahame@angrygoats.net>
+
+ * release 0.08
+ * fixes a number of bugs from Debian: #288378, #275564, #229870
+ * now using monotone for version control.
+
+2003-11-10  Grahame Bowland  <grahame@angrygoats.net>
+
+ * release 0.0.7
+ * merge patches from Joey Hess
+ * cleanups, updated email address to grahame@angrygoats.net
+ * grahame@azale.net does *not* contact me any more.
+
+2002-04-07  Grahame Bowland  <grahame@angrygoats.net>
+
+ * release 0.0.5
+ * merge another patch from Joey Hess
+ * (hopefully) fix bug with ac_adaptor on old ACPI
+
+
+2002-04-06  Grahame Bowland  <grahame@angrygoats.net>
+
+ * release 0.0.4
+ * Added support for the -V option.
+ * Merged patch from Joey Hess <joey@debian.org> to add 
+ * compatibility with older versions of the ACPI /proc 
+   layout.
+
+2002-04-03  Grahame Bowland  <grahame@angrygoats.net>
+
+  * release 0.0.3
+  * fix to work with new /proc layout, as of ACPI patch 20020329
+
+2001-??-??  Grahame Bowland  <grahame@angrygoats.net>
+
+  * release 0.0.2
+  * Acer TM517 support; bugfixes by Ulrich Hahn
+  * autoconf/automake for builds now
+  * general bugfixes
+
+2002-??-??  Grahame Bowland  <grahame@angrygoats.net>
+
+  * Initial Release (0.0.1)
+
+ -- Grahame Bowland <grahame@angrygoats.net>
+

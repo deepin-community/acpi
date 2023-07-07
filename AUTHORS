@@ -1,0 +1,6 @@
+Grahame Bowland <grahame@angrygoats.net>
+Michael Meskes <meskes@debian.org>
+
+Contributors:
+  Joey Hess <joey@debian.org> - bugfixes and compatibility with old 
+                                /proc format

@@ -1,0 +1,49 @@
+.TH "ACPI" "1" 
+.SH "NAME" 
+acpi - Shows battery status and other ACPI information
+.SH "SYNOPSIS" 
+.PP 
+\fBacpi\fP [\fBoptions\fP] 
+.SH "DESCRIPTION" 
+.PP 
+\fBacpi\fP 
+Shows information from the /proc or the /sys filesystem, such as battery status
+or thermal information.
+.SH "OPTIONS" 
+.IP "\fB-b | --battery\fP         " 10 
+show battery information
+.IP "\fB-a | --ac-adapter\fP " 10
+show ac adapter information
+.IP "\fB-t |  --thermal\fP " 10
+show thermal information
+.IP "\fB-c | --cooling\fP " 10
+show cooling device information
+.IP "\fB-V | --everything\fP " 10
+show every device, overrides above options
+.IP "\fB-s | --show-empty\fP " 10
+show non-operational devices
+.IP "\fB-i | --details\fP " 10
+show additional details if available:
+.IP
+* battery capacity information
+.IP
+* temperature trip points
+.IP "\fB-f | --fahrenheit\fP " 10
+use fahrenheit as the temperature unit instead of default celsius
+.IP "\fB-k | --kelvin\fP " 10
+use kelvin as the temperature unit instead of default celsius
+.IP "\fB-p | --proc\fP " 10
+use the old /proc interface, default is the new /sys one
+.IP "\fB-d | --directory <dir>\fP " 10
+path to ACPI info (either /proc/acpi or /sys/class)
+.IP "\fB-h | --help\fP " 10
+display help and exit
+.IP "\fB-v | --version\fP " 10
+output version information and exit
+
+.SH "AUTHOR" 
+.PP 
+The original version of this manual page was written by Paul Telford
+<pxt@debian.org> for the \fBDebian\fP system. Newer additions were done by
+Michael Meskes <meskes@debian.org>. Permission is granted to copy, distribute
+and/or modify this document under the terms of the GNU GPL.

@@ -1,0 +1,50 @@
+.TH "ACPI" "1" 
+.SH "NAME" 
+acpi - zeigt den Batterieladestand und andere ACPI Informationen an
+.SH "SYNOPSIS" 
+.PP 
+\fBacpi\fP [\fBOptionen\fP] 
+.SH "DESCRIPTION" 
+.PP 
+\fBacpi\fP 
+Liest Informationen aus dem /proc-Dateisystem oder aus dem /sys-Dateisystem wie
+z.B. den Batteriestatus und die Temperatur aus und zeigt sie an.
+.SH "OPTIONS" 
+.IP "\fB-b | --battery\fP         " 10 
+zeigt den Batterieladestand an
+.IP "\fB-a | --ac-adapter\fP " 10
+zeigt an, ob die Batterie geladen wird
+.IP "\fB-t |  --thermal\fP " 10
+zeigt die Temperatur an
+.IP "\fB-c | --cooling\fP " 10
+zeigt den Zustand der Kühlgeräte an
+.IP "\fB-V | --everything\fP " 10
+zeigt alles an (ignoriert die anderen Optionen)
+.IP "\fB-s | --show-empty\fP " 10
+zeigt nicht-funktionierende Geräte an
+.IP "\fB-i | --details\fP " 10
+zeige zusätzliche Informationen, wenn verfügbar
+.IP
+* Battery-Kapazität
+.IP
+* Temperatur Schranken
+.IP "\fB-f | --fahrenheit\fP " 10
+verwendet Fahrenheit als Temperatureinheit statt Celsius
+.IP "\fB-k | --kelvin\fP " 10
+verwendet Kelvin als Temperatureinheit statt Celsius
+.IP "\fB-p | --proc\fP " 10
+benutze das alte /proc Interface statt des neuen /sys Interfaces
+.IP "\fB-d | --directory <dir>\fP " 10
+Pfad zu den ACPI-Informationen (entweder /proc/acpi oder /sys/class))
+.IP "\fB-h | --help\fP " 10
+die Hilfeseite anzeigen und beenden
+.IP "\fB-v | --version\fP " 10
+die Versionsnummer anzeigen und beenden
+
+.SH "AUTHOR" 
+.PP 
+Die Originalversion dieser Handbuchseite wurde von Paul Telford
+<pxt@debian.org> für das \fBDebian\fP-System geschrieben. Neuere Änderungen
+stammen von Michael Meskes <meskes@debian.org>. Dieses Dokument darf unter den
+Bedingungen der GNU GPL kopiert, verteilt und/oder verändert werden.
+
